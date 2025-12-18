@@ -1,6 +1,5 @@
 import styles from "../style";
 import { discount, robot1 } from "../assets";
-import GetStarted from "./GetStarted";
 import { socialMedia } from "../constants";
 
 // export default function App() {
@@ -97,10 +96,6 @@ const Hero = () => {
         <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
         <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
         {/* gradient end */}
-      </div>
-
-      <div className={`ss:hidden ${styles.flexCenter}`}>
-        <GetStarted />
       </div>
     </section>
   );
