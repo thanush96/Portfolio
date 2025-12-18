@@ -1,14 +1,10 @@
 import styles from "./style";
 import {
-  Billing,
-  Business,
-  CardDeal,
-  Clients,
+  Experiences,
+  Skills,
   CTA,
   Footer,
   Navbar,
-  Stats,
-  Testimonials,
   Hero,
   Freelance,
 } from "./components";
@@ -42,10 +38,9 @@ const App = () => (
 
     <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
-        <Clients />
-        <Business />
+        <Skills />
+        <Experiences />
         <Freelance />
-        <Stats />
         <CTA />
         <Footer />
       </div>

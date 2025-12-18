@@ -1,6 +1,5 @@
 import { features } from "../constants";
 import styles, { layout } from "../style";
-import Button from "./Button";
 
 const FeatureCard = ({ icon, title, duration, content, index }) => (
   <div
@@ -53,7 +52,7 @@ const FeatureCard = ({ icon, title, duration, content, index }) => (
   </div>
 );
 
-const Business = () => (
+const Experiences = () => (
   <dev>
     {/* <div className={`flex-1 flex justify-start items-center flex-row m-3`}>
       <h4 className="font-poppins font-semibold text-white text-[18px] leading-[23.4px] mb-1">
@@ -90,4 +89,4 @@ const Business = () => (
   </dev>
 );
 
-export default Business;
+export default Experiences;

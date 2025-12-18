@@ -1,7 +1,7 @@
 import { skills } from "../constants";
 import styles from "../style";
 
-const Clients = () => (
+const Skills = () => (
   <section className={`${styles.flexCenter} my-6 sm:my-8`}>
     <div className={`grid grid-cols-3 xs:grid-cols-4 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-7 gap-2 sm:gap-3 w-full px-2 sm:px-4`}>
       {skills.map((skill) => (
@@ -16,4 +16,4 @@ const Clients = () => (
   </section>
 );
 
-export default Clients;
+export default Skills;
