@@ -230,7 +230,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Full Stack Developer
 - 5+ Years Experience
 - GitHub: [@thanush96](https://github.com/thanush96)
-- Portfolio: [Live Demo](https://your-portfolio-url.vercel.app)
+- Portfolio: [Live Demo](https://portfoliodhanush.vercel.app)
 
 ## 🤝 Contributing
 
