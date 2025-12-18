@@ -5,7 +5,7 @@ const FeatureCard = ({ icon, title, duration, content, index }) => (
   <div
     className={`flex sm:flex-row flex-col p-5 sm:p-6 rounded-[16px] sm:rounded-[20px] ${
       index !== features.length - 1 ? "mb-5 sm:mb-6" : "mb-0"
-    } feature-card shadow-lg`}
+    } bg-gradient-to-br from-[#1a1a2e] to-[#0f0f1e] border border-[#33bbcf]/20 hover:border-[#5ce1e6]/50 hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-[0_0_20px_rgba(92,225,230,0.3)] cursor-pointer`}
   >
     <div
       className={`w-[56px] h-[56px] sm:w-[64px] sm:h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue mb-4 sm:mb-0 flex-shrink-0`}
