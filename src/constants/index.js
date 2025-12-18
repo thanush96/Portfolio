@@ -260,12 +260,12 @@ export const stats = [
   {
     id: "stats-2",
     title: "Projects Completed",
-    value: "15+",
+    value: "8+",
   },
   {
     id: "stats-3",
     title: "Technologies",
-    value: "20+",
+    value: "10+",
   },
 ];
 
@@ -338,7 +338,6 @@ export const skills = [
     logo: react,
     name: "React",
   },
-
   {
     id: "skill-2",
     logo: angular,
@@ -356,13 +355,13 @@ export const skills = [
   },
   {
     id: "skill-5",
-    logo: node,
-    name: "Node.js",
+    logo: reactNative,
+    name: "React Native",
   },
   {
     id: "skill-6",
-    logo: express,
-    name: "Express.js",
+    logo: javascript,
+    name: "JavaScript",
   },
   {
     id: "skill-7",
@@ -371,40 +370,37 @@ export const skills = [
   },
   {
     id: "skill-8",
-    logo: javascript,
-    name: "JavaScript",
+    logo: node,
+    name: "Node.js",
   },
   {
     id: "skill-9",
+    logo: express,
+    name: "Express.js",
+  },
+  {
+    id: "skill-10",
     logo: firebase,
     name: "Firebase",
   },
   {
-    id: "skill-10",
+    id: "skill-11",
+    logo: aws,
+    name: "AWS",
+  },
+  {
+    id: "skill-12",
+    logo: googleCloud,
+    name: "Google Cloud",
+  },
+  {
+    id: "skill-13",
     logo: redux,
     name: "Redux",
   },
   {
-    id: "skill-11",
+    id: "skill-14",
     logo: tailwind,
     name: "Tailwind CSS",
-  },
-
-  {
-    id: "skill-12",
-    logo: reactNative,
-    name: "React Native",
-  },
-
-  {
-    id: "skill-13",
-    logo: aws,
-    name: "AWS",
-  },
-
-  {
-    id: "skill-14",
-    logo: googleCloud,
-    name: "Google Cloud",
   },
 ];

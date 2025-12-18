@@ -16,6 +16,23 @@
 
 * {
   scroll-behavior: smooth;
+  cursor: default;
+}
+
+/* Global cursor pointer for interactive elements */
+a, button, [role="button"], [role="link"], 
+.cursor-pointer, img[onclick], div[onclick] {
+  cursor: pointer !important;
+}
+
+/* Prevent text cursor on non-editable text */
+p, h1, h2, h3, h4, h5, h6, span, div, label {
+  cursor: default;
+}
+
+/* Only show text cursor on input fields */
+input, textarea, [contenteditable="true"] {
+  cursor: text;
 }
 
 .text-gradient {

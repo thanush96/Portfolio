@@ -56,9 +56,9 @@ const Hero = () => {
           </div> */}
         </div>
 
-        <h2 className="font-poppins font-medium ss:text-[32px] sm:text-[24px] text-[18px] text-white ss:leading-[45px] sm:leading-[36px] leading-[28px] mt-2">
+        {/* <h2 className="font-poppins font-medium ss:text-[32px] sm:text-[24px] text-[18px] text-white ss:leading-[45px] sm:leading-[36px] leading-[28px] mt-2">
           Full Stack Developer
-        </h2>
+        </h2> */}
         <p className="font-poppins font-normal text-dimWhite max-w-[470px] mt-4 sm:mt-5 text-[14px] sm:text-[16px] md:text-[18px] leading-[24px] sm:leading-[28px] md:leading-[30.8px]">
           I am a highly motivated Full Stack Software Engineer with 5+ years of experience in
           developing and maintaining software applications, specializing in both frontend
