@@ -26,17 +26,21 @@ const Navbar = () => {
       </ul>
 
       <div className="sm:hidden flex flex-1 justify-end items-center">
-        <img
-          src={toggle ? close : menu}
-          alt="menu"
-          className="w-[28px] h-[28px] object-contain"
+        <div
+          className="w-[44px] h-[44px] rounded-full bg-dimBlue hover:bg-blue-gradient flex items-center justify-center cursor-pointer transition-all"
           onClick={() => setToggle(!toggle)}
-        />
+        >
+          <img
+            src={toggle ? close : menu}
+            alt="menu"
+            className="w-[24px] h-[24px] object-contain"
+          />
+        </div>
 
         <div
           className={`${
             !toggle ? "hidden" : "flex"
-          } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
+          } p-6 bg-black-gradient-2 absolute top-20 right-0 mx-4 my-2 min-w-[160px] rounded-xl sidebar shadow-2xl border border-secondary/10`}
         >
           <ul className="list-none flex justify-end items-start flex-1 flex-col">
             {navLinks.map((nav, index) => (
@@ -45,7 +49,10 @@ const Navbar = () => {
                 className={`font-poppins font-medium cursor-pointer text-[16px] ${
                   active === nav.title ? "text-white" : "text-dimWhite"
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
-                onClick={() => setActive(nav.title)}
+                onClick={() => {
+                  setActive(nav.title);
+                  setToggle(false);
+                }}
               >
                 <a href={`#${nav.id}`}>{nav.title}</a>
               </li>

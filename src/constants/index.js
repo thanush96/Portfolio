@@ -9,7 +9,6 @@ import {
   facebook,
   instagram,
   linkedin,
-  twitter,
   react,
   firebase,
   mongo,
@@ -21,6 +20,13 @@ import {
   shellScript,
   android,
   git,
+  flutter,
+  next,
+  tailwind,
+  javascript,
+  reactNative,
+  googleCloud,
+  aws,
 } from "../assets";
 
 export const navLinks = [
@@ -32,38 +38,35 @@ export const navLinks = [
     id: "experience",
     title: "Experience",
   },
-  // {
-  //   id: "product",
-  //   title: "Product",
-  // },
-  // {
-  //   id: "clients",
-  //   title: "Clients",
-  // },
+  {
+    id: "freelance",
+    title: "Projects",
+  },
 ];
 
 export const features = [
   {
     id: "1",
     icon: l6,
-    title: "LINEARSIX",
-    duration: "2022 - present",
+    title: "SOFTWARE ENGINEER | LINEARSIX",
+    duration: "2022 - 2025",
     content: [
       {
-        title: "LIME",
+        title: "LIME Banking System",
         description:
-          "As a skilled software engineer at Linersix, I have been actively involved in the development of a cutting-edge banking application as part of the Lime team. My primary responsibility revolves around the meticulous development of a comprehensive 360 detailed view and the customization of dashboards tailored to meet the specific requirements of various banks. Additionally, I have contributed to the successful release of the application on both iOS and Android platforms. Through my expertise and dedication, I have played a pivotal role in ensuring the app's functionality and user experience align with the industry standards.",
+          "Fintech platform powering private banks in Sri Lanka. Developed banking widgets including Loan Calculator, Investment Planner, and Customer 360 view. Built reusable UI components as versioned NPM packages. Rebuilt and maintained the GUI Docker image and release pipeline. Supported hybrid mobile apps using Cordova for both iOS and Android platforms.",
 
         technology: [
           "Angular",
           "TypeScript",
-          "MUI",
-          "JIRA",
-          "Bitbucket",
+          "Cordova",
           "Docker",
-          "Apache Cordova",
-          "ShellScript",
-          "Agile",
+          "SCSS",
+          "Git",
+          "AWS",
+          "JIRA",
+          "Postman",
+          "Swagger",
         ],
       },
     ],
@@ -71,40 +74,51 @@ export const features = [
   {
     id: "2",
     icon: susila,
-    title: "SUSILA INSPIRE",
+    title: "FULL STACK DEVELOPER | SUSILA INSPIRE",
     duration: "2021 - 2022",
     content: [
       {
-        title: "SUSILA LIFE",
+        title: "KICHUK Mobile App",
         description:
-          "I developed a video streaming web app using ReactJS for Susila Holding Company. The app provides a seamless viewing experience with real-time streaming and playback. It has a user-friendly interface and advanced security features. My app improves the company's online presence, enhances user experience, and increases customer satisfaction.",
+          "A cross-platform mobile application that connects users with home service providers for cleaning, washing, repairs, and salon services. The app also includes an e-commerce module for purchasing service-related equipment.",
 
         technology: [
-          "React JS",
-          "GCP",
-          "PWA",
-          "Github",
-          "Directpay",
-          "MUI",
-          "Service worker",
-          "HTML5",
-          "NPM",
-          "Redux",
+          "Flutter",
+          "Dart",
+          "Node.js",
+          "Firebase Auth",
+          "Firestore",
+          "Firebase Storage",
         ],
       },
-
       {
-        title: "LINKUP",
+        title: "LINKUP Web Application",
         description:
-          "I designed and developed the LinkUp application for Susila Holding Company, a comprehensive platform that includes social connection, job search, and buying and selling features. The app is built using ReactJS, providing a seamless user experience for users to connect with friends and family, search for jobs, and buy and sell items.",
+          "A multi-feature social platform providing job listings, automatic resume generation, property buying/selling services, matrimony search, and access to government gazette updates. The system allows new users to generate professional CVs without requiring registration.",
 
         technology: [
-          "React JS",
-          "GCP",
-          "Github",
-          "HTML5",
+          "React.js",
+          "JWT",
+          "Node.js",
+          "Bootstrap",
+          "GitHub",
           "NPM",
-          "bootstrap",
+          "REST APIs",
+        ],
+      },
+      {
+        title: "SUSILA Life Video Streaming App",
+        description:
+          "A subscription-based Progressive Web App (PWA) for video streaming with real-time playback, user-friendly interface, and advanced security features. Provides seamless viewing experience with payment integration.",
+
+        technology: [
+          "MERN Stack",
+          "MongoDB",
+          "Express",
+          "React",
+          "Node.js",
+          "PWA",
+          "Service Worker",
           "Redux",
         ],
       },
@@ -113,31 +127,37 @@ export const features = [
   {
     id: "3",
     icon: codeBasys,
-    title: "CODE BASYS",
+    title: "SOFTWARE DEVELOPER | CODE BASYS",
     duration: "2020 - 2021",
     content: [
       {
-        title: "ASSET MANAGEMENT",
+        title: "Asset Management System",
         description:
-          "It provides real-time tracking, reporting, and analysis, allowing users to quickly locate, check the status, and track the movement of assets. It also has features for maintenance tracking, making it easier to schedule and perform routine tasks.",
+          "A comprehensive system for managing organizational assets across multiple branches, floors, and rooms. Features include asset addition, warranty tracking, automated expiry alerts, and user-specific asset allocation and maintenance management.",
 
         technology: [
           "PHP",
-          "JavaScript",
-          "JobRouter",
-          "CSS",
           "MySQL",
-          "fileZilla",
-          "jquery",
+          "HTML",
+          "CSS",
+          "GitHub",
+          "REST APIs",
+          "jQuery",
         ],
       },
-
       {
-        title: "RESTAURANT FOOD ORDER APP",
+        title: "Restaurant Food Mobile App",
         description:
-          "I developed a user-friendly food ordering app for android mobile that simplifies the process for customers to browse menus, place orders, and pay. The app includes features like order tracking and real-time updates for improved customer experience.",
+          "A cross-platform mobile application with Admin Portal and User App. Users can view restaurant menus, place bulk food orders, and make seat reservations for specific dates. The Admin Portal allows adding new menu items, setting shop holidays, managing bulk orders, and verifying seat reservations via OTP.",
 
-        technology: ["React native", "GCP", "Github", "CSS", "ADB", "Redux"],
+        technology: [
+          "React Native",
+          "Firebase Auth",
+          "Firestore",
+          "Redux",
+          "CSS",
+          "GitHub",
+        ],
       },
     ],
   },
@@ -145,25 +165,66 @@ export const features = [
   {
     id: "4",
     icon: sgic,
-    title: "SGIC",
+    title: "INDUSTRIAL TRAINING | SAMUEL GNANAM IT CENTRE",
     duration: "2020 - 2021",
     content: [
       {
-        title: "DEFECT TRACKER",
+        title: "Defect Tracker",
         description:
-          "A bug tracking and a reporting system which keeps track of reported software bugs in software development projects. It provides a complete set of recording, reporting, workflow, and other convenience-related features",
+          "A bug tracking and reporting system designed to record, manage, and report software defects in development projects. Provides features for workflow management, bug reporting, and status tracking, helping teams maintain software quality.",
 
         technology: [
-          "Java",
-          "SpringBoot",
-          "Microservice",
-          "Junit5",
+          "Java OOP",
+          "Spring MVC",
+          "Spring Boot",
+          "Microservices",
+          "REST Web Services",
+          "JUnit Testing",
+          "Jenkins",
+          "EC2",
           "MySQL",
-          "JIRA",
-          "REST",
-          "Postman",
-          "Swagger",
         ],
+      },
+    ],
+  },
+];
+
+export const freelanceProjects = [
+  {
+    id: "freelance-1",
+    icon: flutter,
+    title: "FREELANCE PROJECTS",
+    duration: "2020 - 2025",
+    content: [
+      {
+        title: "CeyGo Ride-Sharing App",
+        description:
+          "Developed a cross-platform mobile ride-sharing application using Flutter and Firebase, supporting multiple roles (Customer, Driver, Admin). Features include real-time ride tracking, payment integration via Stripe SDK, and comprehensive admin dashboard.",
+
+        technology: [
+          "Flutter",
+          "Dart",
+          "Node.js",
+          "Firebase Auth",
+          "Firestore",
+          "Firebase Storage",
+          "Stripe SDK",
+        ],
+      },
+      {
+        title: "Music Bible App",
+        description:
+          "Cross-platform mobile app built with Flutter and Firebase to enhance Bible reading, sharing, and community engagement. Features include offline reading, audio Bible, verse sharing, and cloud synchronization. Available on Google Play Store.",
+
+        technology: [
+          "Flutter",
+          "Firebase Auth",
+          "Firestore",
+          "Cloud Functions",
+          "Firebase Storage",
+          "Dart",
+        ],
+        link: "https://play.google.com/store/apps/details?id=com.faite.project.music_bible_music_player",
       },
     ],
   },
@@ -199,82 +260,53 @@ export const feedback = [
 export const stats = [
   {
     id: "stats-1",
-    title: "Year Experience",
-    value: "2+",
+    title: "Years Experience",
+    value: "5+",
   },
   {
     id: "stats-2",
-    title: "Freelance Projects",
-    value: "4+",
+    title: "Projects Completed",
+    value: "15+",
   },
   {
     id: "stats-3",
-    title: "Big projects involve",
-    value: "3",
+    title: "Technologies",
+    value: "20+",
   },
 ];
 
 export const footerLinks = [
   {
-    title: "Useful Links",
+    title: "Quick Links",
     links: [
       {
-        name: "Content",
-        link: "https://www.hoobank.com/content/",
+        name: "Home",
+        link: "#home",
       },
       {
-        name: "How it Works",
-        link: "https://www.hoobank.com/how-it-works/",
+        name: "Experience",
+        link: "#experience",
       },
       {
-        name: "Create",
-        link: "https://www.hoobank.com/create/",
-      },
-      {
-        name: "Explore",
-        link: "https://www.hoobank.com/explore/",
-      },
-      {
-        name: "Terms & Services",
-        link: "https://www.hoobank.com/terms-and-services/",
+        name: "Projects",
+        link: "#freelance",
       },
     ],
   },
   {
-    title: "Community",
+    title: "Connect",
     links: [
       {
-        name: "Help Center",
-        link: "https://www.hoobank.com/help-center/",
+        name: "GitHub",
+        link: "https://github.com/thanush96",
       },
       {
-        name: "Partners",
-        link: "https://www.hoobank.com/partners/",
+        name: "LinkedIn",
+        link: "https://www.linkedin.com/in/thanushkanth-pathmanathan-055063170/",
       },
       {
-        name: "Suggestions",
-        link: "https://www.hoobank.com/suggestions/",
-      },
-      {
-        name: "Blog",
-        link: "https://www.hoobank.com/blog/",
-      },
-      {
-        name: "Newsletters",
-        link: "https://www.hoobank.com/newsletters/",
-      },
-    ],
-  },
-  {
-    title: "Partner",
-    links: [
-      {
-        name: "Our Partner",
-        link: "https://www.hoobank.com/our-partner/",
-      },
-      {
-        name: "Become a Partner",
-        link: "https://www.hoobank.com/become-a-partner/",
+        name: "Email",
+        link: "mailto:thanushkanth96@icloud.com",
       },
     ],
   },
@@ -306,50 +338,79 @@ export const socialMedia = [
   },
 ];
 
-export const clients = [
+export const skills = [
   {
-    id: "client-1",
-    logo: angular,
-  },
-  {
-    id: "client-3",
+    id: "skill-1",
     logo: react,
+    name: "React",
+  },
+
+  {
+    id: "skill-2",
+    logo: angular,
+    name: "Angular",
   },
   {
-    id: "client-2",
+    id: "skill-3",
+    logo: next,
+    name: "Next.js",
+  },
+  {
+    id: "skill-4",
+    logo: flutter,
+    name: "Flutter",
+  },
+  {
+    id: "skill-5",
     logo: node,
+    name: "Node.js",
   },
-
   {
-    id: "client-2",
+    id: "skill-6",
     logo: express,
-  },
-
-  {
-    id: "client-4",
-    logo: firebase,
+    name: "Express.js",
   },
   {
-    id: "client-4",
-    logo: redux,
-  },
-
-  {
-    id: "client-3",
-    logo: mongo,
-  },
-
-  {
-    id: "client-1",
+    id: "skill-7",
     logo: ts,
+    name: "TypeScript",
+  },
+  {
+    id: "skill-8",
+    logo: javascript,
+    name: "JavaScript",
+  },
+  {
+    id: "skill-9",
+    logo: firebase,
+    name: "Firebase",
+  },
+  {
+    id: "skill-10",
+    logo: redux,
+    name: "Redux",
+  },
+  {
+    id: "skill-11",
+    logo: tailwind,
+    name: "Tailwind CSS",
   },
 
   {
-    id: "client-2",
-    logo: android,
+    id: "skill-12",
+    logo: reactNative,
+    name: "React Native",
   },
+
   {
-    id: "client-2",
-    logo: shellScript,
+    id: "skill-13",
+    logo: aws,
+    name: "AWS",
+  },
+
+  {
+    id: "skill-14",
+    logo: googleCloud,
+    name: "Google Cloud",
   },
 ];

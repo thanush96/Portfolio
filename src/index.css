@@ -107,9 +107,21 @@
   }
 }
 
+.feature-card {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.03) 0%,
+    rgba(255, 255, 255, 0.01) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
 .feature-card:hover {
   background: var(--black-gradient);
   box-shadow: var(--card-shadow);
+  border-color: rgba(94, 225, 230, 0.2);
+  transform: translateY(-2px);
 }
 
 .feedback-container .feedback-card:last-child {
@@ -137,4 +149,45 @@
 .white__gradient {
   background: rgba(255, 255, 255, 0.6);
   filter: blur(750px);
+}
+
+/* Mobile-specific improvements */
+@media (max-width: 640px) {
+  .feature-card,
+  .sidebar {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  /* Better touch targets */
+  a, button, [role="button"] {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Smooth scrolling for mobile */
+  html {
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  /* Optimize text rendering on mobile */
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+/* Prevent text selection on touch */
+.no-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Better focus states for accessibility */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #5ce1e6;
+  outline-offset: 2px;
 }

@@ -10,21 +10,23 @@ import {
   Stats,
   Testimonials,
   Hero,
+  Freelance,
 } from "./components";
 
 const App = () => (
-  <div className="bg-primary w-full overflow-hidden ">
+  <div className="bg-primary w-full overflow-hidden">
     <div
-      className={`${styles.paddingX} ${styles.flexCenter}`}
+      className="px-4 sm:px-8 md:px-16 flex justify-center items-center"
       style={{
         overflow: "hidden",
         position: "fixed",
         top: 0,
         width: "100%",
-        background: "rgb(1 6 12 / 70%)",
-        backdropFilter: "blur(9px)",
-        transition: "width 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms",
-        zIndex: 10,
+        background: "rgb(1 6 12 / 85%)",
+        backdropFilter: "blur(12px)",
+        transition: "all 300ms cubic-bezier(0.4, 0, 0.2, 1)",
+        zIndex: 50,
+        boxShadow: "0 2px 8px rgba(0, 0, 0, 0.15)",
       }}
     >
       <div className={`${styles.boxWidth}`}>
@@ -42,9 +44,7 @@ const App = () => (
       <div className={`${styles.boxWidth}`}>
         <Clients />
         <Business />
-        {/* <Billing /> */}
-        {/* <CardDeal /> */}
-        {/* <Testimonials /> */}
+        <Freelance />
         <Stats />
         <CTA />
         <Footer />

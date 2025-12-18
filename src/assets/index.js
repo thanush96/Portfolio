@@ -1,16 +1,22 @@
-import angular from "./angular.png";
+// New skill icons
+import angular from "./angular.svg";
+import react from "./react.svg";
+import node from "./node-js.svg";
+import firebase from "./firebase.svg";
+import redux from "./redux.svg";
+import ts from "./typescript.png";
+import express from "./Express-js.png";
+import flutter from "./flutter.svg";
+import next from "./next.png";
+import tailwind from "./tailwind-css.svg";
+import javascript from "./javascript.svg";
+
+// Other assets
 import git from "./git.png";
-import react from "./react.png";
-import firebase from "./firebase.png";
 import mongo from "./mongo.png";
-import redux from "./redux.png";
-import ts from "./ts.png";
-import express from "./express.png";
-import node from "./node.png";
 import shellScript from "./shellScript.png";
-import android from "./android.png";
+import android from "./android.svg";
 import bill from "./bill.png";
-import card from "./card.png";
 import logo from "./logo.svg";
 import quotes from "./quotes.svg";
 import robot from "./robot.png";
@@ -31,25 +37,36 @@ import twitter from "./twitter.svg";
 import sgic from "./sgic.png";
 import codeBasys from "./codeBasys.png";
 import susila from "./susila.png";
-import l6 from "./l6.png";
+import l6 from "./linearsix.png";
 import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
+import reactNative from "./reactNative.png";
+import aws from "./aws.svg";
+import googleCloud from "./google-cloud.svg";
 
 export {
+  // Skill icons (new)
   angular,
-  git,
-  node,
   react,
+  node,
   firebase,
-  mongo,
   redux,
   ts,
   express,
+  flutter,
+  next,
+  tailwind,
+  javascript,
+  reactNative,
+  googleCloud,
+  aws,
+  // Other assets
+  git,
+  mongo,
   shellScript,
   android,
   bill,
-  card,
   logo,
   quotes,
   robot,

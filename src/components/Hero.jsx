@@ -33,49 +33,52 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className={`flex md:flex-row flex-col ${styles.paddingTop}`}
+      className={`flex md:flex-row flex-col ${styles.paddingTop} min-h-[calc(100vh-80px)]`}
     >
       <div
-        className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}
+        className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 md:py-0 py-4`}
       >
-        <div className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
-          <img src={discount} alt="discount" className="w-[32px] h-[32px]" />
-          <p className={`${styles.paragraph} ml-2`}>
-            {/* <span className="text-white">20%</span> Discount For{" "} */}
-            <span className="text-white">Software </span> Engineer
+        <div className="flex flex-row items-center py-2 px-3 sm:py-[6px] sm:px-4 bg-discount-gradient rounded-[10px] mb-3 sm:mb-2">
+          <img src={discount} alt="discount" className="w-[28px] h-[28px] sm:w-[32px] sm:h-[32px]" />
+          <p className="ml-2 text-[14px] sm:text-[16px] md:text-[18px] font-poppins font-normal text-white">
+            <span className="text-white">Full Stack </span> Developer
           </p>
         </div>
 
         <div className="flex flex-row justify-between items-center w-full">
-          <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[75px]">
-            {/* THANUSHKANTH <br className="sm:block hidden" />{" "} */}
+          <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] sm:text-[52px] text-[32px] text-white ss:leading-[100.8px] sm:leading-[68px] leading-[42px]">
             <span className="text-gradient">THANUSHKANTH</span>{" "}
+            <br className="sm:block hidden" />
+            <span className="text-gradient">PATHMANATHAN</span>
           </h1>
           {/* <div className="ss:flex hidden md:mr-4 mr-0">
             <GetStarted />
           </div> */}
         </div>
 
-        {/* <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] w-full">
-          Payment Method.
-        </h1> */}
-        <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-          I am a highly motivated software engineer with 3 of experience in
-          developing and maintaining software applications, with a focus on
-          fullstack development.
+        <h2 className="font-poppins font-medium ss:text-[32px] sm:text-[24px] text-[18px] text-white ss:leading-[45px] sm:leading-[36px] leading-[28px] mt-2">
+          Full Stack Developer
+        </h2>
+        <p className="font-poppins font-normal text-dimWhite max-w-[470px] mt-4 sm:mt-5 text-[14px] sm:text-[16px] md:text-[18px] leading-[24px] sm:leading-[28px] md:leading-[30.8px]">
+          I am a highly motivated Full Stack Software Engineer with 5+ years of experience in
+          developing and maintaining software applications, specializing in both frontend
+          and backend development. Experienced in Angular, React, Next.js, Flutter, Node.js,
+          and cloud platforms (GCP, AWS).
         </p>
 
-        <div className="flex flex-row md:mt-6 mt-6">
-          {socialMedia.map((social, index) => (
-            <img
+        <div className="flex flex-row flex-wrap gap-4 md:mt-6 mt-5">
+          {socialMedia.map((social) => (
+            <div
               key={social.id}
-              src={social.icon}
-              alt={social.id}
-              className={`w-[21px] h-[21px] object-contain cursor-pointer ${
-                index !== socialMedia.length - 1 ? "mr-6" : "mr-0"
-              }`}
+              className="w-[44px] h-[44px] sm:w-[48px] sm:h-[48px] rounded-full bg-dimBlue hover:bg-blue-gradient flex items-center justify-center cursor-pointer transition-all hover:scale-110"
               onClick={() => window.open(social.link)}
-            />
+            >
+              <img
+                src={social.icon}
+                alt={social.id}
+                className="w-[24px] h-[24px] sm:w-[26px] sm:h-[26px] object-contain"
+              />
+            </div>
           ))}
         </div>
       </div>
