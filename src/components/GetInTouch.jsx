@@ -1,6 +1,6 @@
 import styles from "../style";
 
-const CTA = () => (
+const GetInTouch = () => (
   <section
     className={`${styles.flexCenter} my-8 sm:my-12 md:my-16 px-4 py-8 sm:px-8 sm:py-10 md:px-16 md:py-12 sm:flex-row flex-col bg-black-gradient-2 rounded-[16px] sm:rounded-[20px] box-shadow`}
   >
@@ -25,4 +25,4 @@ const CTA = () => (
   </section>
 );
 
-export default CTA;
+export default GetInTouch;

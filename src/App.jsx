@@ -2,7 +2,7 @@ import styles from "./style";
 import {
   Experiences,
   Skills,
-  CTA,
+  GetInTouch,
   Footer,
   Navbar,
   Hero,
@@ -41,7 +41,7 @@ const App = () => (
         <Skills />
         <Experiences />
         <Freelance />
-        <CTA />
+        <GetInTouch />
         <Footer />
       </div>
     </div>
