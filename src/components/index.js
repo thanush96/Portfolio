@@ -4,7 +4,7 @@ import Skills from "./Skills";
 import GetInTouch from "./GetInTouch";
 import Footer from "./Footer";
 import Hero from "./Hero";
-import Freelance from "./Freelance";
+import AppShowcase from "./AppShowcase";
 
 export {
   Navbar,
@@ -13,5 +13,5 @@ export {
   GetInTouch,
   Footer,
   Hero,
-  Freelance,
+  AppShowcase,
 };

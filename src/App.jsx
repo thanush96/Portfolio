@@ -6,7 +6,7 @@ import {
   Footer,
   Navbar,
   Hero,
-  Freelance,
+  AppShowcase,
 } from "./components";
 
 const App = () => (
@@ -40,7 +40,7 @@ const App = () => (
       <div className={`${styles.boxWidth}`}>
         <Skills />
         <Experiences />
-        <Freelance />
+        <AppShowcase />
         <GetInTouch />
         <Footer />
       </div>

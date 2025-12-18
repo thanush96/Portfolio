@@ -257,7 +257,7 @@ export const footerLinks = [
       },
       {
         name: "Projects",
-        link: "#freelance",
+        link: "#apps",
       },
     ],
   },
@@ -376,5 +376,68 @@ export const skills = [
     id: "skill-14",
     logo: tailwind,
     name: "Tailwind CSS",
+  },
+];
+
+export const iosApps = [
+  {
+    id: "app-1",
+    name: "CeyGo Ride-Sharing App",
+    platform: "iOS & Android",
+    icon: "",
+    description: "Cross-platform mobile ride-sharing application using Flutter and Firebase, supporting multiple roles (Customer, Driver, Admin). Features include real-time ride tracking, payment integration via Stripe SDK, and comprehensive admin dashboard.",
+    appStoreLink: "",
+    technology: [
+      "Flutter",
+      "Dart",
+      "Node.js",
+      "Firebase Auth",
+      "Firestore",
+      "Firebase Storage",
+      "Stripe SDK",
+    ],
+    screenshots: [
+      "/apps/CeyGO/1.png",
+      "/apps/CeyGO/2.png",
+      "/apps/CeyGO/3.png",
+      "/apps/CeyGO/4.png",
+    ],
+  },
+  {
+    id: "app-2",
+    name: "Music Bible App",
+    platform: "iOS & Android",
+    icon: "",
+    description: "Cross-platform mobile app built with Flutter and Firebase to enhance Bible reading, sharing, and community engagement. Features include offline reading, audio Bible, verse sharing, and cloud synchronization. Available on Google Play Store.",
+    appStoreLink: "https://play.google.com/store/apps/details?id=com.faite.project.music_bible_music_player",
+    technology: [
+      "Flutter",
+      "Firebase Auth",
+      "Firestore",
+      "Cloud Functions",
+      "Firebase Storage",
+      "Dart",
+    ],
+    screenshots: [
+      "/apps/aMusicBible/1.jpg",
+      "/apps/aMusicBible/2.jpg",
+      "/apps/aMusicBible/3.jpg",
+      "/apps/aMusicBible/4.jpg",
+    ],
+  },
+  {
+    id: "app-3",
+    name: "Velto App",
+    platform: "iOS & Android",
+    icon: "",
+    description: "Cross-platform mobile application built with Flutter, offering intuitive UI/UX and robust backend integration. Features include real-time data synchronization, secure authentication, and smooth navigation across multiple screens.",
+    appStoreLink: "",
+    technology: ["Flutter", "Dart", "Firebase", "REST API", "Provider", "State Management"],
+    screenshots: [
+      "/apps/velto/1.png",
+      "/apps/velto/2.png",
+      "/apps/velto/3.png",
+      "/apps/velto/4.png",
+    ],
   },
 ];
