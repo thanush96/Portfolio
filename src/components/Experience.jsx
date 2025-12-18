@@ -10,7 +10,11 @@ const FeatureCard = ({ icon, title, duration, content, index }) => (
     <div
       className={`w-[56px] h-[56px] sm:w-[64px] sm:h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue mb-4 sm:mb-0 flex-shrink-0`}
     >
-      <img src={icon} alt="star" className="w-[75%] h-[75%] sm:w-[80%] sm:h-[80%] object-contain" />
+      <img
+        src={icon}
+        alt="star"
+        className="w-[75%] h-[75%] sm:w-[80%] sm:h-[80%] object-contain"
+      />
     </div>
     <div className="flex-1 flex flex-col sm:ml-4 ml-0">
       <h4 className="font-poppins font-semibold text-white text-[15px] sm:text-[17px] md:text-[18px] leading-[22px] sm:leading-[24px] mb-2">
@@ -23,7 +27,7 @@ const FeatureCard = ({ icon, title, duration, content, index }) => (
 
       {content.map((item, idx) => {
         return (
-          <div key={idx} className="mt-3 sm:mt-4">
+          <div key={idx} className="mt-3 mb-4">
             <h4 className="font-poppins font-semibold text-white text-[13px] sm:text-[14px] md:text-[15px] leading-[20px] sm:leading-[22px] mb-2">
               {item.title}
             </h4>
@@ -31,9 +35,7 @@ const FeatureCard = ({ icon, title, duration, content, index }) => (
               {item.description}
             </p>
 
-            <div
-              className="flex flex-wrap gap-2 mt-2"
-            >
+            <div className="flex flex-wrap gap-2 mt-2">
               {item.technology.map((tech, techIdx) => {
                 return (
                   <div

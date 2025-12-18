@@ -21,6 +21,7 @@ import {
   reactNative,
   googleCloud,
   aws,
+  freelancer
 } from "../assets";
 
 export const navLinks = [
@@ -186,7 +187,7 @@ export const features = [
 export const freelanceProjects = [
   {
     id: "freelance-1",
-    icon: flutter,
+    icon: freelancer,
     title: "FREELANCE PROJECTS",
     duration: "2020 - 2025",
     content: [

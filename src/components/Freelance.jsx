@@ -23,7 +23,7 @@ const FreelanceCard = ({ icon, title, duration, content, index }) => (
 
       {content.map((item, idx) => {
         return (
-          <div key={idx} className="mt-3 sm:mt-4">
+          <div key={idx} className="mt-3 sm:mt-4 mb-4">
             <h4 className="font-poppins font-semibold text-white text-[13px] sm:text-[14px] md:text-[15px] leading-[20px] sm:leading-[22px] mb-2">
               {item.title}
             </h4>

@@ -32,6 +32,7 @@ import l6 from "./linearsix.png";
 import reactNative from "./reactNative.png";
 import aws from "./aws.svg";
 import googleCloud from "./google-cloud.svg";
+import freelancer from "./freelancer.png";
 
 export {
   // Skill icons (new)
@@ -67,4 +68,5 @@ export {
   codeBasys,
   l6,
   susila,
+  freelancer
 };
