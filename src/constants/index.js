@@ -221,6 +221,21 @@ export const freelanceProjects = [
         ],
         link: "https://play.google.com/store/apps/details?id=com.faite.project.music_bible_music_player",
       },
+      {
+        title: "TIT Education LMS App",
+        description:
+          "A comprehensive Learning Management System (LMS) mobile application developed for TIT Education. Built with React Native, the app provides students with access to course materials, video lectures, assignments, and progress tracking. Features include offline content access, push notifications for updates, and seamless integration with the institution's learning platform.",
+
+        technology: [
+          "React Native",
+          "Firebase Auth",
+          "Firestore",
+          "Firebase Storage",
+          "Push Notifications",
+          "Redux",
+        ],
+        link: "https://play.google.com/store/apps/details?id=com.titeducation&hl=en",
+      },
     ],
   },
 ];
@@ -430,7 +445,7 @@ export const iosApps = [
     name: "Velto App",
     platform: "iOS & Android",
     icon: "",
-    description: "Cross-platform mobile application built with Flutter, offering intuitive UI/UX and robust backend integration. Features include real-time data synchronization, secure authentication, and smooth navigation across multiple screens.",
+    description: "Cross-platform mobile application built with Flutter, offering intuitive UI/UX and robust backend integration. Features include real-time data synchronization, secure authentication, and smooth navigation.",
     appStoreLink: "",
     technology: ["Flutter", "Dart", "Firebase", "REST API", "Provider", "State Management"],
     screenshots: [
@@ -438,6 +453,28 @@ export const iosApps = [
       "/apps/velto/2.png",
       "/apps/velto/3.png",
       "/apps/velto/4.png",
+    ],
+  },
+  {
+    id: "app-4",
+    name: "LMS App",
+    platform: "iOS & Android",
+    icon: "",
+    description: "A comprehensive Learning Management System (LMS) mobile application developed for TIT Education. Built with React Native, the app provides students with access to course materials, video lectures, assignments, and progress tracking.",
+    appStoreLink: "https://play.google.com/store/apps/details?id=com.titeducation&hl=en",
+    technology: [
+      "React Native",
+      "Firebase Auth",
+      "Firestore",
+      "Firebase Storage",
+      "Push Notifications",
+      "Redux",
+    ],
+    screenshots: [
+      "/apps/LMS/1.png",
+      "/apps/LMS/2.png",
+      "/apps/LMS/3.png",
+      "/apps/LMS/4.png",
     ],
   },
 ];

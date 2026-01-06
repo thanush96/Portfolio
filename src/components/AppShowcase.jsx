@@ -201,21 +201,22 @@ const AppShowcase = () => {
       id="apps"
       className={`${layout.section} mt-6 sm:mt-8 mb-6 sm:mb-8`}
     >
+      
       {/* Section Header */}
-      <div className="mb-6 sm:mb-8 md:mb-10 min-w-[180px] sm:min-w-[200px] flex flex-col items-center justify-center text-center">
+      {/* <div className="mb-6 sm:mb-8 md:mb-10 min-w-[180px] sm:min-w-[200px] flex flex-col items-center justify-center text-center">
         <h2 className={`font-poppins font-semibold text-white text-[24px] xs:text-[28px] sm:text-[36px] md:text-[40px] lg:text-[48px] leading-[32px] xs:leading-[36px] sm:leading-[46px] md:leading-[52px] lg:leading-[60px]`}>
           Apps
-          {/* <span className="text-gradient"> Apps  </span> */}
+          <span className="text-gradient"> Apps  </span>
         </h2>
-        {/* <p
+        <p
           className={`font-poppins font-normal text-dimWhite text-[13px] xs:text-[14px] sm:text-[15px] md:text-[16px] leading-[20px] xs:leading-[22px] sm:leading-[24px] md:leading-[26px] mt-2 xs:mt-3 sm:mt-4 text-center sm:text-left max-w-[600px] mx-auto sm:mx-0`}
         >
           Mobile applications built with modern technologies
-        </p> */}
-      </div>
+        </p>
+      </div> */}
 
       {/* Apps Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 xs:gap-4 sm:gap-5 md:gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 xs:gap-4 sm:gap-5 md:gap-6">
         {iosApps.map((app, index) => (
           <AppCard key={app.id} app={app} index={index} />
         ))}
